@@ -100,14 +100,6 @@ const movies = {
 
 class App extends Component {
   render() {
-   let usersWithMovies = [];
-   usersWithMovies = Object.values(users).map(user =>  {
-            const profilesList = profiles.filter((p) => Math.trunc(p.userID) === user.id);
-            const moviesList = Object.values(movies).filter((m) => 
-                                                            m.id === Math.trunc(profilesList[0].favoriteMovieID));
-            return {userName: user.name, movieName: moviesList[0].name, id: user.id};
-        }
-    );
     return (
       <div>
         <header className="App-header">
