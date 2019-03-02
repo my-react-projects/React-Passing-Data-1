@@ -78,7 +78,7 @@ const users = {
 const movies = {
   1: {
     id: 1,
-    name: 'Planet Earth 1',
+    name: 'Planet Earth 2',
   },
   2: {
     id: 2,
